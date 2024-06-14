@@ -7,3 +7,12 @@ MOCK_INGREDIENT_PRICE = 4567
 MOCK_INGREDIENT_NAME = 'Совас'
 MOCK_INGREDIENT_TYPE = 'Начиночка'
 PRICE_BURGER = MOCK_BUN_PRICE * 2 + MOCK_INGREDIENT_PRICE
+MOCK_SECOND_INGREDIENT_PRICE = 33
+MOCK_SECOND_INGREDIENT_NAME = 'Чимичури'
+MOCK_SECOND_INGREDIENT_TYPE = 'Соус'
+RECEIPT = ('(==== Лучшая в мире булка ====)\n'
+                   '= начиночка Совас =\n'
+                   '= соус Чимичури =\n'
+                   '(==== Лучшая в мире булка ====)\n'
+                   '\n'
+                   'Price: 4846')

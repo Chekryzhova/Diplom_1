@@ -19,3 +19,12 @@ def mock_ingredients():
     mock_ingredient.get_price.return_value = data.MOCK_INGREDIENT_PRICE
 
     return mock_ingredient
+
+@pytest.fixture(scope='function')
+def mock_second_ingredients():
+    mock_second_ingredient = Mock()
+    mock_second_ingredient.get_type.return_value = data.MOCK_SECOND_INGREDIENT_TYPE
+    mock_second_ingredient.get_name.return_value = data.MOCK_SECOND_INGREDIENT_NAME
+    mock_second_ingredient.get_price.return_value = data.MOCK_SECOND_INGREDIENT_PRICE
+
+    return mock_second_ingredient
